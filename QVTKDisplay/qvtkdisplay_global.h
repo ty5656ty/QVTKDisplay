@@ -1,0 +1,12 @@
+#ifndef QVTKDISPLAY_GLOBAL_H
+#define QVTKDISPLAY_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#ifdef QVTKDISPLAY_LIB
+# define QVTKDISPLAY_EXPORT Q_DECL_EXPORT
+#else
+# define QVTKDISPLAY_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // QVTKDISPLAY_GLOBAL_H
